@@ -1,0 +1,38 @@
+.calculatorContainer {
+  background-color: white; /* 背景を白に */
+  border: 1px solid lightgray;
+  max-width: 400px; /* 電卓の横幅を固定 */
+  margin: 0 auto; /* 画面の中央に配置 */
+  padding: 16px 32px 32px; /* 内側の余白 */
+  box-sizing: border-box;
+}
+
+/* 表示部分 */
+.display {
+  width: 100%; /* 横幅いっぱい */
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  padding: 12px 8px;
+  font-size: 1.6rem;
+  text-align: center; /* 数字を中央寄せ */
+  background-color: whitesmoke;
+  border: 1px solid gray;
+}
+
+/* ボタンのグリッドレイアウト設定 */
+.buttonGrid {
+  display: grid; /* グリッドレイアウト */
+  grid-template-columns: repeat(4, 1fr); /* 4列を均等な幅で並べる */
+  gap: 12px; /* グリッド間の隙間 */
+}
+
+.button {
+  background-color: lightblue; /* 背景色 */
+  color: black; /* 文字色 */
+  padding: 1.2rem 0; /* 上下の余白 */
+  font-size: 1.6rem; /* 文字を大きく */
+  font-weight: bold;
+  border: none; /* 枠線をなくす */
+  border-radius: 12px; /* 角を丸くする */
+  cursor: pointer;
+}
