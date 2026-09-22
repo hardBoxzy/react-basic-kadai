@@ -43,12 +43,12 @@ export function Calculator({ display, setDisplay }) {
     // 進捗率を10％進める関数
   const handleClick = (btn) => {
     if (btn === 'C') {
-      setDisplay(' ');
+      setDisplay('');
     } else if (btn === '=') {
       const result = calculate(display);
       setDisplay(result);
     } else {
-      setDisplay(display === '0' || display === 'エラー' ? btn : display + btn);
+      setDisplay(display === 'エラー' ? btn : display + btn);
     }
   };
  return (

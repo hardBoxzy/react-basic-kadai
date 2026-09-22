@@ -5,7 +5,7 @@ import { Calculator } from './Calculator';
 
 function App() {
 // 進捗率をstateとして管理
-const [display, setDisplay] = useState(" ");
+const [display, setDisplay] = useState("");
 
   return (
     <>
